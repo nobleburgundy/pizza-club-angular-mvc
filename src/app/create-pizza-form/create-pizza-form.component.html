@@ -1,0 +1,32 @@
+<div class="container">
+  <h2>Add Pizza Form</h2>
+  <form id="create-pizza-form">
+    <div class="form-group">
+      <label for="pizzaNameInput">Pizza Name</label>
+      <input type="text" class="form-control" id="pizzaNameInput" aria-describedby="pizzaName"
+        placeholder="Enter pizza name">
+      <small id="pizzaNameHelp" class="form-text text-muted">Like 'pepperoni', or 'The Works'.</small>
+    </div>
+    <div class="form-group">
+      <label for="restarantInput">Restaurant</label>
+      <input type="text" class="form-control" id="restaurantInput" aria-describedby="descriptionInput"
+        placeholder="Restaurant name">
+      <!-- <small id="restaurantNameHelp" class="form-text text-muted"></small> -->
+    </div>
+    <div class="form-group">
+      <label for="descriptionInput">Description/Notes</label>
+      <input type="text" class="form-control" id="descriptionInput" aria-describedby="descriptionInput"
+        placeholder="Add a description or notes on the pizza">
+      <!-- <small id="restaurantNameHelp" class="form-text text-muted"></small> -->
+    </div>
+    <div class="form-group">
+      <label for="descriptionInput">Description/Notes</label>
+      <textarea class="form-control" id="descriptionInput" aria-describedby="descriptionInput"
+        placeholder="Add a description or notes on the pizza"></textarea>
+      <!-- <small id="restaurantNameHelp" class="form-text text-muted"></small> -->
+    </div>
+    <label for="pizzaScoreSlider" class="form-label">Score</label>
+    <input type="range" class="form-range" min="0" max="5" value="3" id="pizzaScoreSlider">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
