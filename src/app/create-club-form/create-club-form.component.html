@@ -1,1 +1,26 @@
-<p>create-club-form works!</p>
+<div class="container">
+  <h2>Add Pizza Form</h2>
+  <form id="create-club-form">
+    <div class="form-group">
+      <label for="clubNameInput">Club Name</label>
+      <input type="text" class="form-control" id="clubNameInput" aria-describedby="pizzaName"
+        placeholder="Enter club name" data-test="clubNameInput">
+      <small id="pizzaNameHelp" class="form-text text-muted">Like 'Rockin Ronis'</small>
+    </div>
+    <div class="form-group">
+      <label id="location" for="restarantInput">Location</label>
+      <input type="text" class="form-control mb-2" id="clubCity" aria-describedby="location" placeholder="City">
+      <input type="text" class="form-control mb-2" id="clubCity" aria-describedby="location" placeholder="State">
+      <input type="text" class="form-control" maxlength="5" id="clubCity" aria-describedby="location" placeholder="Zip">
+    </div>
+    <label for="clubImageInput">Club Logo Image</label>
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="customFile">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+    <div class="form-group mt-5">
+      <button type="button" class="btn btn-secondary px-5 mr-5" routerLink="/club-page">Cancel</button>
+      <button type="submit" class="btn btn-primary px-5">Submit</button>
+    </div>
+  </form>
+</div>

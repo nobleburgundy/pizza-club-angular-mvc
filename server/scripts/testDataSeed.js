@@ -53,6 +53,21 @@ const pizzaSeed = [
   },
 ];
 
+const clubSeed = [
+  {
+    name: "Rockin Ronis",
+  },
+  {
+    name: "Never Too Much Sauce",
+  },
+  {
+    name: "MPLS Pizza Club",
+  },
+  {
+    name: "NYC Pizza Club",
+  },
+];
+
 db.Restaurant.remove({})
   .then(() => db.Restaurant.collection.insertMany(restaurantSeed))
   .then((data) => {
@@ -61,7 +76,12 @@ db.Restaurant.remove({})
       .then(() => db.Pizza.collection.insertMany(pizzaSeed))
       .then((data) => {
         console.log(data.result.n + " test pizzas inserted!");
-        process.exit(0);
+        db.Club.remove({})
+          .then(() => db.Club.collection.insertMany(clubSeed))
+          .then((data) => {
+            console.log(data.result.n + " test clubs inserted!");
+            process.exit(0);
+          });
       });
   })
   .catch((err) => {

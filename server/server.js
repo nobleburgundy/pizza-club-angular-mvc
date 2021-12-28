@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const pizzaController = require("./controller/pizzaController");
 const restaurantController = require("./controller/restaurantController");
+const clubController = require("./controller/clubController");
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
@@ -19,6 +20,9 @@ app.get("/api/pizzas/:id", (req, res) => {
 
 // RESTAURANT collection routes
 app.get("/api/restaurants", restaurantController.findAll);
+
+// Club collection routes
+app.get("/api/clubs", clubController.findAll);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {

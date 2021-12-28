@@ -9,6 +9,7 @@ import { CreateClubFormComponent } from './create-club-form/create-club-form.com
 import { LoginPageComponent } from './login-page/login-page.component';
 import { CreateAccountFormComponent } from './create-account-form/create-account-form.component';
 import { ClubPageComponent } from './club-page/club-page.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ClubPageComponent } from './club-page/club-page.component';
     LoginPageComponent,
     CreateAccountFormComponent,
     ClubPageComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,7 @@ import { ClubPageComponent } from './club-page/club-page.component';
       { path: 'create-club', component: CreateClubFormComponent },
       { path: 'add-pizza', component: CreatePizzaFormComponent },
       { path: 'create-account', component: CreateAccountFormComponent },
+      { path: 'club-page', component: ClubPageComponent },
     ]),
   ],
   providers: [],
