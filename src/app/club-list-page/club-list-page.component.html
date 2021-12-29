@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Pizza Club List</h1>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let club of this.clubs">
+      <a [routerLink]="['/club/' + club._id]">{{club.name}}</a>
+    </li>
+  </ul>
+</div>

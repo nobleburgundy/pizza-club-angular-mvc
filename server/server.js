@@ -22,6 +22,7 @@ app.get("/api/pizzas/:id", (req, res) => {
 app.get("/api/restaurants", restaurantController.findAll);
 
 // Club collection routes
+app.get("/api/club/:id", clubController.findById);
 app.get("/api/clubs", clubController.findAll);
 
 // Serve up static assets (usually on heroku)

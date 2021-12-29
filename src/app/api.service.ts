@@ -33,6 +33,6 @@ export class ApiService {
   }
 
   public getClub(id) {
-    return this.httpClient.get(this.apiUrl + `/clubs/${id}`);
+    return this.httpClient.get(this.apiUrl + `/club/${id}`);
   }
 }
